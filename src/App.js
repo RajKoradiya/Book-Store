@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "./pages/Home";
 import About from "./pages/About.";
+import List from "./components/List";
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
     <div>
       {currentpage === "Home" ? <Home /> : <About />}
       <button onClick={handleChange}>Change Page</button>
+      <List />
     </div>
   );
 }
