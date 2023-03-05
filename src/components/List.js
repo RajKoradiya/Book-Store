@@ -27,11 +27,9 @@ function List() {
 
     ]
 
-    const objList = object.map(obj=><h3>{obj.id} {obj.title} {obj.description} </h3>)
+    const objList = object.map(obj=><Title key={obj.title} obj = {obj}/>)
     return(
-        <div>
-            <Title object={objList}/>
-        </div>
+        <p>{objList}</p>
     );
 }
 
