@@ -1,8 +1,10 @@
 import React from "react";
+import FocusInput from "./components/FocusInput";
+// import InputRef from "./components/InputRef";
 // import Home from "./pages/Home";
 // import About from "./pages/About.";
 // import List from "./components/List";
-import LoginForm from "./components/LoginForm";
+// import LoginForm from "./components/LoginForm";
 
 
 function App() {
@@ -24,7 +26,9 @@ function App() {
       {/* {currentpage === "Home" ? <Home /> : <About />}
       <button onClick={handleChange}>Change Page</button> */}
       {/* <List /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
+      {/* <Title /> */}
+      <FocusInput />
     </div>
   );
 }
