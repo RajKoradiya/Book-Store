@@ -1,5 +1,7 @@
 import React from "react";
-import FocusInput from "./components/FocusInput";
+// import FocusInput from "./components/FocusInput";
+// import UserList from "./components/UserList";
+import Home from "./pages/Home";
 // import InputRef from "./components/InputRef";
 // import Home from "./pages/Home";
 // import About from "./pages/About.";
@@ -28,7 +30,9 @@ function App() {
       {/* <List /> */}
       {/* <LoginForm /> */}
       {/* <Title /> */}
-      <FocusInput />
+      {/* <FocusInput /> */}
+      {/* <UserList /> */}
+      <Home />
     </div>
   );
 }
