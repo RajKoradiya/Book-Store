@@ -1,7 +1,8 @@
 import React from "react";
+import RenderPropsComponent from "./components/RenderPropsComponent";
 // import FocusInput from "./components/FocusInput";
 // import UserList from "./components/UserList";
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
 // import InputRef from "./components/InputRef";
 // import Home from "./pages/Home";
 // import About from "./pages/About.";
@@ -32,7 +33,12 @@ function App() {
       {/* <Title /> */}
       {/* <FocusInput /> */}
       {/* <UserList /> */}
-      <Home />
+      {/* <Home /> */}
+      <RenderPropsComponent render = {() => {
+        return(
+          <h3>I am coming from Render Props</h3>
+        )
+      }} />
     </div>
   );
 }
