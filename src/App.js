@@ -1,8 +1,9 @@
 import React from "react";
+import Post from "./components/Post";
 // import Consumer3 from "./components/Consumer3";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
-import Users from "./components/Users";
+// import Users from "./components/Users";
 // import FocusInput from "./components/FocusInput";
 // import UserList from "./components/UserList";
 // import Home from "./pages/Home";
@@ -47,7 +48,9 @@ function App() {
         <Consumer3/>
       </UserProvider> */}
 
-      <Users/>
+      {/* <Users/> */}
+
+      <Post/>
     </div>
   );
 }
