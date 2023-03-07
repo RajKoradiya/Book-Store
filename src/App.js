@@ -3,7 +3,7 @@ import React from "react";
 // import Consumer3 from "./components/Consumer3";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
-// import Users from "./components/Users";
+import Users from "./components/Users";
 // import FocusInput from "./components/FocusInput";
 // import UserList from "./components/UserList";
 // import Home from "./pages/Home";
@@ -11,7 +11,7 @@ import React from "react";
 // import Home from "./pages/Home";
 // import About from "./pages/About.";
 // import List from "./components/List";
-import LoginForm from "./components/LoginForm";
+// import LoginForm from "./components/LoginForm";
 
 
 function App() {
@@ -33,7 +33,7 @@ function App() {
       {/* {currentpage === "Home" ? <Home /> : <About />}
       <button onClick={handleChange}>Change Page</button> */}
       {/* <List /> */}
-      <LoginForm />
+      {/* <LoginForm /> */}
       {/* <Title /> */}
       {/* <FocusInput /> */}
       {/* <UserList /> */}
@@ -48,7 +48,7 @@ function App() {
         <Consumer3/>
       </UserProvider> */}
 
-      {/* <Users/> */}
+      <Users/>
 
       {/* <Post/> */}
     </div>
