@@ -59,16 +59,18 @@ const reducer = (state,action)=> {
       return state 
   }
 }
-export default function Users(props) {
+function Users(props) {
   // const [list, setList] = React.useState(null);
   const [state, dispatch] = useReducer(reducer,initialValue)
 
   useEffect(() => {
     axios.get("https://jsonplaceholder.typicode.com/users/1")
     .then(res => {
+      console.log(res)
       dispatch({type: "FETCH_SUCCESS", payload: res.data})
     })
     .catch(err => {
+      console.log(err)
       dispatch({type: "FETCH_ERROR"})
     })
   },[])
@@ -92,3 +94,4 @@ export default function Users(props) {
   )
 }
 
+export default React.memo(Users)
