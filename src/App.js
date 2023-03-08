@@ -1,15 +1,15 @@
-import React, { useReducer } from "react";
+import React from "react";
 // import Consumer1 from "./components/Consumer1";
 // import PostDetails from "./components/PostDetails";
 // import HooksMouse from "./components/HooksMouse";
 // import Post from "./components/Post";
-import Consumer2 from "./components/Consumer2";
-import Consumer1 from "./components/Consumer1";
+// import Consumer2 from "./components/Consumer2";
+// import Consumer1 from "./components/Consumer1";
 // import CounterHook from "./components/CounterHook";
 // import UDetails from "./components/UDetails";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
-// import Users from "./components/Users";
+import Users from "./components/Users";
 // import FocusInput from "./components/FocusInput";
 // import UserList from "./components/UserList";
 // import Home from "./pages/Home";
@@ -20,26 +20,26 @@ import Consumer1 from "./components/Consumer1";
 // import LoginForm from "./components/LoginForm";
 
 // export const UserContext = React.createContext()
-export const counterContext = React.createContext()
+// export const counterContext = React.createContext()
 
-const initialValue =0;
-const reducer = (state,action) => {
-    switch (action) {
-        case 'increment':
-            return state + 1
-        case 'decrement':
-            return state - 1
-        case 'reset':
-            return initialValue
-        default:
-            return state
-    }
-}
+// const initialValue =0;
+// const reducer = (state,action) => {
+//     switch (action) {
+//         case 'increment':
+//             return state + 1
+//         case 'decrement':
+//             return state - 1
+//         case 'reset':
+//             return initialValue
+//         default:
+//             return state
+//     }
+// }
 
 
 function App() {
 
-  const[count,dispatch] = useReducer(reducer,initialValue)
+  // const[count,dispatch] = useReducer(reducer,initialValue)
   // const [currentpage, setCurrentpage] = React.useState("Home")
 
   // const handleChange = () => {
@@ -73,7 +73,7 @@ function App() {
         <Consumer2/>
       </UserContext.Provider> */}
 
-      {/* <Users/> */}
+      <Users/>
 
       {/* <Post/> */}
 
@@ -82,13 +82,13 @@ function App() {
       {/* <CounterHook/> */}
       {/* <UDetails/> */}
 
-      <counterContext.Provider value={{countState: count, countDispatch: dispatch}}>
+      {/* <counterContext.Provider value={{countState: count, countDispatch: dispatch}}>
         <div>
           Count - {count}
           <Consumer1/>
           <Consumer2/>
         </div>
-      </counterContext.Provider>
+      </counterContext.Provider> */}
     </div>
   );
 }
