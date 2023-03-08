@@ -1,4 +1,5 @@
 import React from "react";
+import Form from "./components/Form";
 // import RegisterUser from "./components/RegisterUser";
 // import Consumer1 from "./components/Consumer1";
 // import PostDetails from "./components/PostDetails";
@@ -10,7 +11,7 @@ import React from "react";
 // import UDetails from "./components/UDetails";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
-import Users from "./components/Users";
+// import Users from "./components/Users";
 // import FocusInput from "./components/FocusInput";
 // import UserList from "./components/UserList";
 // import Home from "./pages/Home";
@@ -74,7 +75,7 @@ function App() {
         <Consumer2/>
       </UserContext.Provider> */}
 
-      <Users/>
+      {/* <Users/> */}
 
       {/* <Post/> */}
 
@@ -91,6 +92,8 @@ function App() {
         </div>
       </counterContext.Provider> */}
       {/* <RegisterUser /> */}
+
+      <Form/>
     </div>
   );
 }
