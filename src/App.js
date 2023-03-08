@@ -4,7 +4,8 @@ import React from "react";
 // import HooksMouse from "./components/HooksMouse";
 // import Post from "./components/Post";
 // import Consumer2 from "./components/Consumer2";
-import CounterHook from "./components/CounterHook";
+// import CounterHook from "./components/CounterHook";
+import UDetails from "./components/UDetails";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
 // import Users from "./components/Users";
@@ -58,7 +59,8 @@ function App() {
 
       {/* <HooksMouse /> */}
       {/* <PostDetails /> */}
-      <CounterHook/>
+      {/* <CounterHook/> */}
+      <UDetails/>
     </div>
   );
 }
