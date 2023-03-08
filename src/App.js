@@ -1,5 +1,6 @@
 import React from "react";
-import HooksMouse from "./components/HooksMouse";
+import PostDetails from "./components/PostDetails";
+// import HooksMouse from "./components/HooksMouse";
 // import Post from "./components/Post";
 // import Consumer3 from "./components/Consumer3";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
@@ -53,7 +54,8 @@ function App() {
 
       {/* <Post/> */}
 
-      <HooksMouse />
+      {/* <HooksMouse /> */}
+      <PostDetails />
     </div>
   );
 }
