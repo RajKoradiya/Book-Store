@@ -1,8 +1,9 @@
 import React from "react";
-import PostDetails from "./components/PostDetails";
+// import Consumer1 from "./components/Consumer1";
+// import PostDetails from "./components/PostDetails";
 // import HooksMouse from "./components/HooksMouse";
 // import Post from "./components/Post";
-// import Consumer3 from "./components/Consumer3";
+import Consumer2 from "./components/Consumer2";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
 // import Users from "./components/Users";
@@ -15,7 +16,7 @@ import PostDetails from "./components/PostDetails";
 // import List from "./components/List";
 // import LoginForm from "./components/LoginForm";
 
-
+export const UserContext = React.createContext()
 function App() {
   // const [currentpage, setCurrentpage] = React.useState("Home")
 
@@ -46,16 +47,16 @@ function App() {
         )
       }} /> */}
 
-      {/* <UserProvider value="Raj">
-        <Consumer3/>
-      </UserProvider> */}
+      <UserContext.Provider value="Raj">
+        <Consumer2/>
+      </UserContext.Provider>
 
       {/* <Users/> */}
 
       {/* <Post/> */}
 
       {/* <HooksMouse /> */}
-      <PostDetails />
+      {/* <PostDetails /> */}
     </div>
   );
 }
