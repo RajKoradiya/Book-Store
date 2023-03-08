@@ -13,7 +13,7 @@
 // export default Consumer2
 
 import React, {useContext} from 'react'
-import Consumer3 from './Consumer3'
+// import Consumer3 from './Consumer3'
 import { UserContext } from '../App'
 function Consumer2() {
   const user = useContext(UserContext)
