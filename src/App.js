@@ -3,7 +3,8 @@ import React from "react";
 // import PostDetails from "./components/PostDetails";
 // import HooksMouse from "./components/HooksMouse";
 // import Post from "./components/Post";
-import Consumer2 from "./components/Consumer2";
+// import Consumer2 from "./components/Consumer2";
+import CounterHook from "./components/CounterHook";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
 // import Users from "./components/Users";
@@ -47,9 +48,9 @@ function App() {
         )
       }} /> */}
 
-      <UserContext.Provider value="Raj">
+      {/* <UserContext.Provider value="Raj">
         <Consumer2/>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
 
       {/* <Users/> */}
 
@@ -57,6 +58,7 @@ function App() {
 
       {/* <HooksMouse /> */}
       {/* <PostDetails /> */}
+      <CounterHook/>
     </div>
   );
 }
