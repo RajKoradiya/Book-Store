@@ -48,7 +48,7 @@
 
 
 
-import React, { useReducer, useEffect, useState } from 'react'
+import React, { useReducer, useEffect, } from 'react'
 
 const initialValue = 0;
 const reducer = (state, action) => {
@@ -68,10 +68,10 @@ const reducer = (state, action) => {
 
 function CounterHook() {
     const [count, dispatch] = useReducer(reducer, initialValue)
-    const [renderCount, setRenderCount] = useState(initialValue)
+    // const [renderCount, setRenderCount] = useState(initialValue)
 
     useEffect(() => {
-        setRenderCount((prevCount) => prevCount+1)
+        console.log("Render Component render")
     },[])
     
     return (
@@ -80,7 +80,7 @@ function CounterHook() {
             <button onClick={() => dispatch('add')}>Add</button>
             <button onClick={() => dispatch('subtract')}>Subtract</button>
             <button onClick={() => dispatch('multiply')}>Multiply</button>
-            <div>Render Counter : {renderCount}</div>
+            {/* <div>Render Counter : {renderCount}</div> */}
         </div>
     )
 }
