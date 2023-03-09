@@ -1,4 +1,6 @@
 import React from "react";
+import Child from "./components/Child";
+import Parent from "./components/Parent";
 // import Form from "./components/Form";
 // import RegisterUser from "./components/RegisterUser";
 // import Consumer1 from "./components/Consumer1";
@@ -7,7 +9,7 @@ import React from "react";
 // import Post from "./components/Post";
 // import Consumer2 from "./components/Consumer2";
 // import Consumer1 from "./components/Consumer1";
-import CounterHook from "./components/CounterHook";
+// import CounterHook from "./components/CounterHook";
 // import UDetails from "./components/UDetails";
 // import RenderPropsComponent from "./components/RenderPropsComponent";
 // import { UserProvider } from "./components/UserContex";
@@ -81,7 +83,7 @@ function App() {
 
       {/* <HooksMouse /> */}
       {/* <PostDetails /> */}
-      <CounterHook/>
+      {/* <CounterHook/> */}
       {/* <UDetails/> */}
 
       {/* <counterContext.Provider value={{countState: count, countDispatch: dispatch}}>
@@ -94,6 +96,9 @@ function App() {
       {/* <RegisterUser /> */}
 
       {/* <Form/> */}
+      <Parent>
+        <Child/>
+      </Parent>
     </div>
   );
 }
