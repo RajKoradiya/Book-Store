@@ -1,6 +1,8 @@
 import React from "react";
+import { ChildA } from "./components/ContextChild";
+import {ContextParent} from "./components/ContextParent";
 // import Child from "./components/Child";
-import Parent from "./components/Parent";
+// import Parent from "./components/Parent";
 // import Form from "./components/Form";
 // import RegisterUser from "./components/RegisterUser";
 // import Consumer1 from "./components/Consumer1";
@@ -96,7 +98,12 @@ function App() {
       {/* <RegisterUser /> */}
 
       {/* <Form/> */}
-      <Parent/>
+      {/* <Parent/> */}
+
+      <ContextParent>
+        <ChildA/>
+      </ContextParent>
+     
         
     </div>
   );
