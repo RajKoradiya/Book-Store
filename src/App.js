@@ -1,5 +1,5 @@
 import React from "react";
-import Child from "./components/Child";
+// import Child from "./components/Child";
 import Parent from "./components/Parent";
 // import Form from "./components/Form";
 // import RegisterUser from "./components/RegisterUser";
@@ -96,9 +96,8 @@ function App() {
       {/* <RegisterUser /> */}
 
       {/* <Form/> */}
-      <Parent>
-        <Child/>
-      </Parent>
+      <Parent/>
+        
     </div>
   );
 }

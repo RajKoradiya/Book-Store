@@ -1,20 +1,21 @@
 import React, { useState } from "react";
 
-function Child() {
+
+function Child3() {
   const [childCount, setChildCount] = useState(0);
 
   const handleClick = () => {
     setChildCount(childCount + 1);
 };
-console.log("child render")
+console.log("child3 render")
 
   return (
     <div>
-      <h2>Child Component</h2>
+      <h2>Child3 Component</h2>
       <p>Render count: {childCount}</p>
-      <button onClick={handleClick}>Increment Child Count</button>
+      <button onClick={handleClick}>Increment Child3 Count</button>
     </div>
   );
 }
 
-export default React.memo(Child);
+export default React.memo(Child3);
