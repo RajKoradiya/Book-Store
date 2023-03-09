@@ -18,30 +18,71 @@
 
 // <----------------------Using useReducer-------------------------->
 
-import React, {useReducer} from 'react'
-const initialValue =0;
-const reducer = (state,action) => {
+// import React, {useReducer} from 'react'
+// const initialValue =0;
+// const reducer = (state,action) => {
+//     switch (action) {
+//         case 'increment':
+//             return state + 1
+//         case 'decrement':
+//             return state - 1
+//         case 'reset':
+//             return initialValue
+//         default:
+//             return state
+//     }
+// }
+// function CounterHook() {
+//    const[count, dispatch] = useReducer(reducer,initialValue)
+//   return (
+//     <div>
+//         <div>Count - {count}</div>
+//       <button onClick={() => dispatch('increment')}>Increment</button>
+//       <button onClick={() => dispatch('decrement')}>Decrement</button>
+//       <button onClick={() => dispatch('reset')}>Reset</button>
+//     </div>
+//   )
+// }
+
+// export default CounterHook
+
+
+
+import React, { useReducer, useEffect, useState } from 'react'
+
+const initialValue = 0;
+const reducer = (state, action) => {
     switch (action) {
-        case 'increment':
+        case 'add':
             return state + 1
-        case 'decrement':
+        case 'subtract':
             return state - 1
-        case 'reset':
-            return initialValue
+        case 'multiply':
+            return state * 2
         default:
             return state
     }
 }
+
+
+
 function CounterHook() {
-   const[count, dispatch] = useReducer(reducer,initialValue)
-  return (
-    <div>
-        <div>Count - {count}</div>
-      <button onClick={() => dispatch('increment')}>Increment</button>
-      <button onClick={() => dispatch('decrement')}>Decrement</button>
-      <button onClick={() => dispatch('reset')}>Reset</button>
-    </div>
-  )
+    const [count, dispatch] = useReducer(reducer, initialValue)
+    const [renderCount, setRenderCount] = useState(initialValue)
+
+    useEffect(() => {
+        setRenderCount((prevCount) => prevCount+1)
+    },[])
+    
+    return (
+        <div>
+            <div>Count - {count}</div>
+            <button onClick={() => dispatch('add')}>Add</button>
+            <button onClick={() => dispatch('subtract')}>Subtract</button>
+            <button onClick={() => dispatch('multiply')}>Multiply</button>
+            <div>Render Counter : {renderCount}</div>
+        </div>
+    )
 }
 
 export default CounterHook
